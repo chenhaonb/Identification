@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFB00"
+    tools:context=".MainActivity">
+   <RelativeLayout
+       android:layout_width="210dp"
+       android:layout_height="210dp"
+       android:layout_gravity="center_horizontal"
+       android:gravity="center"
+
+       >
+      <com.example.util.CricleImageView
+          android:id="@+id/picture"
+          android:layout_width="200dp"
+          android:layout_height="200dp"
+          android:layout_centerInParent="true"
+          android:src="@drawable/main"
+          app:civ_border_width="2dp"
+          app:civ_border_color="#FFE600" />
+
+   </RelativeLayout>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="100dp"
+       android:orientation="horizontal"
+       android:layout_marginTop="10dp"
+       android:background="#FFD500"
+       >
+      <Button
+          android:id="@+id/button_photo"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:layout_marginLeft="20dp"
+          android:layout_marginRight="10dp"
+          android:layout_gravity="center_vertical"
+          android:text="从相册获取图片"
+          android:background="#7FB3D8"
+          >
+      </Button>
+      <Button
+          android:id="@+id/button_camera"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+
+          android:layout_marginRight="20dp"
+          android:layout_gravity="center_vertical"
+          android:text="拍照获取图片"
+          android:background="#7FB3D8"
+         >
+      </Button>
+
+   </LinearLayout>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginBottom="10dp"
+       android:layout_marginTop="10dp"
+       >
+
+      <Button
+          android:id="@+id/button_watch"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="#FFD500"
+          android:text="果蝇识别结果"
+          android:textColor="#05416B"
+          android:textSize="20sp">
+
+      </Button>
+
+   </LinearLayout>
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="300dp"
+       android:layout_marginTop="10dp"
+       android:orientation="vertical"
+       android:background="#FFFB00"
+       >
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="示例"
+          android:textColor="#05416B"
+          android:textSize="20sp"
+          >
+      </TextView>
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/test2"
+          >
+      </ImageView>
+
+   </LinearLayout>
+
+
+
+</LinearLayout>
